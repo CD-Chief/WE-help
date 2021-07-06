@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Work Experience - Help</title>
+        <style>
+
+            .page {
+                display: none;
+            }
+
+            #Main {
+                width: cover;
+                height: cover;
+                color: white;
+                font-family: Arial;
+                text-align: center;
+                padding: 20px;
+                z-index: 50;
+
+            }
+
+            h3 {
+                animation: fadeInFromNone 3s ease-out;
+
+            }
+
+            @keyframes fadeInFromNone {
+                0% {
+                    display: none;
+                    opacity: 0;
+                }
+
+                1% {
+                    display: block;
+                    opacity: 0;
+                }
+
+                100% {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+
+            @keyframes move {
+                0% {
+                    left: 100%;
+                }
+                100% {
+                    left: 0;
+                }
+            }
+
+            .pagebutton {
+                position: relative;
+                animation-name: move;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            button:hover { background-color: green;}
+
+            button {
+                background-color: #1f0ebbab;
+                border: rgb(44, 44, 44);
+                color: white;
+                padding: 10px;
+                text-align: center;
+                display: inline-block;
+                font-size: 16px;
+            }
+
+            .page {
+                animation: fadeInFromNone 3s ease-out;
+            }
+
+
+            .left {
+                float: left;
+                background-color:rgba(24, 22, 22, 0.938);
+                color: white;
+                height: 800px;
+                width: 200;
+                z-index: 100;
+                position: relative;
+                padding: 20px;
+                margin: 20px;
+
+            }
+
+            .middle {
+                float: none;
+                height: 1000px;
+                z-index: 100;
+                position: relative;
+
+            }
+
+            .right {
+                float: right;
+                background-color: black;
+                color: white;
+                height: 800px;
+                width: 200;
+                z-index: 100;
+                position: relative;
+
+            }
+
+        </style>
+        <script>
+
+            function showpage1() {
+                document.getElementById('page1').setAttribute('style', 'display: none')
+                document.getElementById('page2').setAttribute('style', 'display: none')
+                document.getElementById('page3').setAttribute('style', 'display: none')
+                
+                document.getElementById('page1').setAttribute('style', 'display: block')
+
+            }
+
+            function showpage2() {
+                document.getElementById('page1').setAttribute('style', 'display: none')
+                document.getElementById('page2').setAttribute('style', 'display: none')
+                document.getElementById('page3').setAttribute('style', 'display: none')
+                
+                document.getElementById('page2').setAttribute('style', 'display: block')
+
+            }
+
+            function showpage3() {
+                document.getElementById('page1').setAttribute('style', 'display: none')
+                document.getElementById('page2').setAttribute('style', 'display: none')
+                document.getElementById('page3').setAttribute('style', 'display: none')
+                
+                document.getElementById('page3').setAttribute('style', 'display: block')
+
+            }
+
+        </script>
+    </head>
+    <body style="background-color: rgba(24, 22, 22, 0.938) ;">
+        <div id="Main">
+            <header>
+                <h1>Welcome to our Webpage!</h1>
+            </header>
+            <div>
+                <h3>
+                    Thanks for visiting, This a website I made along with
+                     2 other friends to help the future year 11's during their work placement
+                </h3>
+            </div>
+            <button class=pagebutton onclick="showpage1()" >Do's and Dont's</button>
+            <button class=pagebutton onclick="showpage2()" >Us</button>
+            <button class=pagebutton onclick="showpage3()" >FAQ</button>
+
+            <div class=page id=page1>
+                <div class="left">
+
+                    <h4>
+
+                    </h4>
+
+                </div>
+                <div class="middle">
+                    <h2>
+
+                        
+                    </h2>
+                </div>
+                <div class="right">
+
+                </div>
+
+            </div>
+
+
+            <div class=page id=page2>
+                <div class="left">
+
+                </div>
+
+                <div class="middle">
+                    <h2>
+                        <p>
+                            Coding : Chief Osei
+                        </p>
+                        <p>
+                            Writing and Contents : Tejas Trikha + Max Weweler
+                        </p>
+                    </h2>
+                </div>
+
+                <div class="right">
+
+                </div>
+            </div>
+
+
+            <div class=page id=page3>
+                <div class="left">
+
+                </div>
+
+                <div class="middle">
+                    <h2>
+
+                    </h2>
+                </div>
+
+                <div class="right">
+
+                </div>
+                <h1> page3</h1>
+            </div>
+
+        </div>
+    </body>
+</html>
